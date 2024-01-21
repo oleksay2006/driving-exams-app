@@ -1,0 +1,10 @@
+@import "normalize";
+@import "reset";
+@import "mixins";
+@import "variables";
+@import "typography";
+
+* {
+  font-family: "Poppins", sans-serif;
+  color: $text-color;
+}

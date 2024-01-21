@@ -1,0 +1,45 @@
+.card {
+  &__wrapper {
+    background-color: $white;
+    padding: 16px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+  }
+  &__chevron {
+    @include icon-mask("chevron", 5px, 10px, #262F56);
+  }
+  &__first-part {
+    display: flex;
+    align-items: center;
+  }
+  &__block {
+    padding: 11px 10px 10px;
+    border-radius: 10px;
+    margin-right: 16px;
+    &--practice {
+      @include icon-mask("practice", 20px, 20px, $white);
+    }
+    &--test {
+      @include icon-mask("test", 20px, 20px, $white);
+    }
+    &--road {
+      @include icon-mask("road", 20px, 20px, $white);
+    }
+    &--study {
+      @include icon-mask("study", 20px, 20px, $white);
+    }
+    &--history {
+      @include icon-mask("history", 20px, 20px, $white);
+    }
+  }
+  &__title {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 19.2px;
+    letter-spacing: -0.24px;
+  }
+}
