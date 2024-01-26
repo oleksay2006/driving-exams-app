@@ -1,0 +1,20 @@
+.button {
+  padding: 16px 45px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 19.2px;
+  letter-spacing: -0.24px;
+  border-radius: 25px;
+  border: 1px solid $white;
+  cursor: pointer;
+  transition: .2s all ease-in-out;
+  &:hover {
+    background-color: #6093EF !important;
+    border-color: #6093EF !important;
+  }
+  &:active {
+    background-color: #3264AD !important;
+    border-color: #3264AD !important;
+  }
+}

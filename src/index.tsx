@@ -2,6 +2,7 @@ import { type MountableElement, render } from "solid-js/web";
 import { Router } from "@solidjs/router";
 import routes from "@/routes";
 import "@/styles/styles.scss";
+import MainLayout from "@/layouts/MainLayout";
 
 const root = document.getElementById("root");
 
@@ -12,5 +13,5 @@ if (import.meta.env.DEV && !(root instanceof HTMLElement)) {
 }
 
 render(() => (
-  <Router>{routes}</Router>
+  <Router root={MainLayout}>{routes}</Router>
 ), root as MountableElement);

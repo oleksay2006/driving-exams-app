@@ -1,0 +1,25 @@
+.modal {
+  &__title {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 19.2px;
+    letter-spacing: -0.24px;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  &__description {
+    text-align: center;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: -0.24px;
+    white-space: pre-line;
+  }
+  &__image {
+    width: 127px;
+    display: block;
+    margin: 0 auto 30px;
+  }
+}

@@ -1,0 +1,20 @@
+.main {
+  &__wrapper {
+    width: 100%;
+    display: block;
+    background-color: $light-blue;
+    align-items: center;
+    padding: 26px 15px 10px;
+    border-radius: 16px 16px 0 0;
+    height: calc(100vh - 96px);
+    position: absolute;
+    overflow-y: scroll;
+    top: 96px;
+  }
+  &--not-found {
+    @extend .main__wrapper;
+    min-height: 100vh;
+    border-radius: 0;
+    top: 0;
+  }
+}

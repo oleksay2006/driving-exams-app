@@ -5,12 +5,18 @@ settings:
   excludeLinksFromLockfile: false
 
 dependencies:
+  '@solid-primitives/event-dispatcher':
+    specifier: ^0.0.106
+    version: 0.0.106(solid-js@1.8.11)
   '@solidjs/router':
     specifier: ^0.10.9
     version: 0.10.9(solid-js@1.8.11)
   solid-js:
     specifier: ^1.8.11
     version: 1.8.11
+  solid-transition-group:
+    specifier: ^0.2.3
+    version: 0.2.3(solid-js@1.8.11)
 
 devDependencies:
   '@types/node':
@@ -708,6 +714,39 @@ packages:
       '@nodelib/fs.scandir': 2.1.5
       fastq: 1.15.0
     dev: true
+
+  /@solid-primitives/event-dispatcher@0.0.106(solid-js@1.8.11):
+    resolution: {integrity: sha512-Jwp4sedfUaWMx5XwOmSoluWtPg3sK23YB1MoB3oqaFc+7JtV7NzvUjJ/VUQks0ql39ZHp5ug3KX5iu5e3MLatQ==}
+    peerDependencies:
+      solid-js: ^1.6.12
+    dependencies:
+      solid-js: 1.8.11
+    dev: false
+
+  /@solid-primitives/refs@1.0.6(solid-js@1.8.11):
+    resolution: {integrity: sha512-ruh4YdVMxThEVnvqbpeLXKojW442vpFU8q7dSKtElGOTa31aKOAkRb9BTbdaTwVjN4BEq79fiiYIXozJNl4dSw==}
+    peerDependencies:
+      solid-js: ^1.6.12
+    dependencies:
+      '@solid-primitives/utils': 6.2.2(solid-js@1.8.11)
+      solid-js: 1.8.11
+    dev: false
+
+  /@solid-primitives/transition-group@1.0.4(solid-js@1.8.11):
+    resolution: {integrity: sha512-9nPg6HYAmEi7riH0C2bSCVw/2asgGSzHuN0yFFYyK9JgmXqJgyeyA+6thZbj7GgUQMRhtBxpH8yG7N2nEh8ttA==}
+    peerDependencies:
+      solid-js: ^1.6.12
+    dependencies:
+      solid-js: 1.8.11
+    dev: false
+
+  /@solid-primitives/utils@6.2.2(solid-js@1.8.11):
+    resolution: {integrity: sha512-11ypVbp987XxETeRqY5Y3OmmTpm8/jZqJXRvo6AyqBthzkvvjEdReuUMU2yVb+pwWGxfZpWHZ6EUCcGXUMhfwg==}
+    peerDependencies:
+      solid-js: ^1.6.12
+    dependencies:
+      solid-js: 1.8.11
+    dev: false
 
   /@solidjs/router@0.10.9(solid-js@1.8.11):
     resolution: {integrity: sha512-TmipgAI2cU7A94fBO1MOEx7j9OYoKtddoOonSFb2221w5I1xxdjLk9W4CZDdyOVdO5z80f70KGJvNq83WFX/Qg==}
@@ -2556,6 +2595,17 @@ packages:
       '@babel/types': 7.22.5
       solid-js: 1.8.11
     dev: true
+
+  /solid-transition-group@0.2.3(solid-js@1.8.11):
+    resolution: {integrity: sha512-iB72c9N5Kz9ykRqIXl0lQohOau4t0dhel9kjwFvx81UZJbVwaChMuBuyhiZmK24b8aKEK0w3uFM96ZxzcyZGdg==}
+    engines: {node: '>=18.0.0', pnpm: '>=8.6.0'}
+    peerDependencies:
+      solid-js: ^1.6.12
+    dependencies:
+      '@solid-primitives/refs': 1.0.6(solid-js@1.8.11)
+      '@solid-primitives/transition-group': 1.0.4(solid-js@1.8.11)
+      solid-js: 1.8.11
+    dev: false
 
   /source-map-js@1.0.2:
     resolution: {integrity: sha512-R0XvVJ9WusLiqTCEiGCmICCMplcCkIwwR11mOSD9CR5u+IXYdiseeEuXCVAjS54zqwkLcPNnmU4OeJ6tUrWhDw==}

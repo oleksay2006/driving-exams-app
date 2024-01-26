@@ -7,6 +7,9 @@
     justify-content: space-between;
     align-items: center;
     cursor: pointer;
+    @media (max-width: 450px) {
+      margin-bottom: 16px;
+    }
   }
   &__chevron {
     @include icon-mask("chevron", 5px, 10px, #262F56);
@@ -36,10 +39,9 @@
     }
   }
   &__title {
-    font-size: 16px;
+    font-size: 17px;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 600;
     line-height: 19.2px;
-    letter-spacing: -0.24px;
   }
 }
